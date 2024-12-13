@@ -335,7 +335,9 @@ header {
 
 
 .snoopy-container img {
+  width: 100%; /* Match map frame dimensions */
+  max-width: 800px; /* Align with the frame-holder max-width */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+  object-fit: contain;
 }
+
